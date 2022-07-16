@@ -41,6 +41,7 @@ public class TestPropertties {
         outPath = "/Volumes/Macintosh-HD-Data/File/Java/workspace/Thread/src/com/xixi/model/properties/testStore.properties";
         try {
             FileWriter fw = new FileWriter(outPath);
+
             properties.store(fw,"Comment");  //第二个是参数为注释的内容，不能为中文（使用Unicode编码方法写入）
             fw.close();
          //   properties.clear();
