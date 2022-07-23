@@ -1,4 +1,4 @@
-package com.xixi.model.properties;
+package com.xixi.properties;
 
 import java.io.*;
 import java.util.Properties;

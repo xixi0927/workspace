@@ -1,4 +1,4 @@
-package com.xixi.model2;
+package com.xixi.Thread;
 
 /**
  * @author 孟凡喜
