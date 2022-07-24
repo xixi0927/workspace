@@ -16,10 +16,10 @@ public class TestSleep {
         t.interrupt();*/
 
         PrintThread pt = new PrintThread();
-        Thread t = new Thread();
+        Thread t = new Thread(pt);
         t.start();
         for (int j = 0; j < 10; j++) {
-            System.out.println();
+            System.out.print("j="+j+"\t");
         }
 
     }
@@ -39,7 +39,7 @@ class PrintThread implements Runnable{
                 e.printStackTrace();
                 System.out.println("时间未到，但被唤醒。。。");
             }
-            System.out.println("i+"+i+"\t");
+            System.out.print("i+"+i+"\t");
 
         }
     }
